@@ -1,2 +1,2 @@
-FROM ubuntu:19.10
+FROM ubuntu:18.10
 RUN apt-get -y update && nproc
