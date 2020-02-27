@@ -5,7 +5,7 @@ description: A set of hello world examples.
 
 apps:
   hello-world-cli:
-    command: nprocsnapcraft.yaml
+    command: nproc
 
   hello-service:
     command: hello-world
