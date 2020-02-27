@@ -1,4 +1,4 @@
-name: docker
+name: testhissomaster
 version: 17.03.2-ce-1
 summary: Docker Linux container runtime
 description: Docker complements kernel namespacing with a high-level API which operates at the process level. It runs unix processes with strong guarantees of isolation and repeatability across servers.
