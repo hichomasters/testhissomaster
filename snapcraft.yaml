@@ -1,17 +1,5 @@
 name: testhissomaster
 apps:
-  # TODO determine if we can "provide" a "docker-compose" in PATH directly (since this'll show up as "docker.compose" in the user PATH
-  help:
-    command: help
-
-parts:
-  snappy-bins:
-    plugin: shell
-    shell: bash
-    shell-flags: ['-ex']
-    shell-command: |
-      install -d "$SNAPCRAFT_PART_INSTALL/bin"
-      nproc
-      install -t "$SNAPCRAFT_PART_INSTALL/bin" "$SNAPDIR"/bin/*
-    stage-packages:
-      - mount
+  serverapp:
+    command: nproc
+    daemon: simple
