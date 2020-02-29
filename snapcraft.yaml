@@ -1,5 +1,0 @@
-name: testhissomaster
-apps:
-  serverapp:
-    command: nproc
-    daemon: simple
