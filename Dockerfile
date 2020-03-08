@@ -1,2 +1,2 @@
-FROM ubuntu:16.04
+FROM ubuntu:19.10
 RUN nproc
