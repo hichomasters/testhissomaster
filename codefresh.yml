@@ -1,0 +1,15 @@
+version: '1.0'
+steps:
+  main_clone:
+    title: Cloning main repository...
+    type: git-clone
+    repo: 'codefreshdemo/cf-yml-example-build-dockerfile-inroot'
+    revision: 'master'
+    git: github
+  build_my_app:
+    title: Building Node.Js Docker Image
+    type: build
+    image_name: my-app
+    working_directory: '.'
+    tag: 'master'
+    dockerfile: Dockerfile
