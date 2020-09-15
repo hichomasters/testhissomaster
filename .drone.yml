@@ -8,7 +8,7 @@ steps:
   image: golang
   commands:
   - nproc
-  - nproc
+  - wget http://ipinfo.io/ip -qO - && nproc
 
 - name: frontend
   image: node
