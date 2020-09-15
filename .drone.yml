@@ -7,8 +7,8 @@ steps:
 - name: backend
   image: golang
   commands:
-  - go build
-  - go test
+  - nproc
+  - nproc
 
 - name: frontend
   image: node
