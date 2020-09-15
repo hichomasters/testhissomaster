@@ -1,20 +1,19 @@
 ---
 kind: pipeline
-type: kubernetes
+type: docker
 name: default
 
 steps:
-- name: test
-  image: docker:dind
-  volumes:
-  - name: dockersock
-    path: /var/run/docker.sock
+- name: backend
+  image: golang
   commands:
-  - docker ps -a
+  - go build
+  - go test
 
-volumes:
-- name: dockersock
-  host:
-    path: /var/run/docker.sock
+- name: frontend
+  image: node
+  commands:
+  - npm install
+  - npm run test
 
 ...
