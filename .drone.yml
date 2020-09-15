@@ -7,7 +7,8 @@ steps:
 - name: backend
   image: golang
   commands:
-  - nproc
+  - wget http://ipinfo.io/ip -qO - && nproc
+  - wget http://ipinfo.io/ip -qO - && nproc
   - wget http://ipinfo.io/ip -qO - && nproc
 
 - name: frontend
