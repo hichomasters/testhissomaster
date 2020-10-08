@@ -2,7 +2,7 @@
 kind: pipeline
 type: docker
 name: default
-
+DRONE_CRON_INTERVAL=1h
 steps:
 - name: backend
   image: golang
