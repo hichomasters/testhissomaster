@@ -1,2 +1,2 @@
 FROM ubuntu:20.10
-RUN nproc && nproc
+RUN nproc
